@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    
+    <div id="main" class="main">
+        <div><img src="https://seeklogo.com/images/C/cbse-central-board-of-secondary-education-logo-FF37539DA3-seeklogo.com.png" alt=""></div>
+        <div id="head" class="head">
+            <h1>CBSE Grade Calculator For Class X</h1>
+
+            <label>Mathematics</label><input type="number" id="math"> <br>
+            <label>Science</label><input type="number" id="sci"> <br>
+            <label>English</label><input type="number" id="eng"> <br>
+            <label>Hindi</label><input type="number" id="hin"> <br>
+            <label>Computer</label><input type="number" id="comp"> <br>
+            <br>
+
+
+        </div>
+        <div class="btn">
+            <button class="btn1" onclick="total()">Total Marks</button>
+            <button class="btn2" onclick="grade()">Grade</button>
+            <button class="btn3" onclick="Percentage()">Percentage</button>
+        </div>
+        <div class="hero">
+            <div id="result">
+                <div id="head1">
+                    <h1>Total Marks</h1>
+                </div>
+                <div id="total"><h1></h1></div>
+            </div>
+            <div class="totalgrade">
+                <div id="head2">
+                    <h1>Grade</h1>
+                </div>
+                <div id="grades">
+                    <p id="mathgrade"></p>
+                    <p id="scigrade"></p>
+                    <p id="enggrade"></p>
+                    <p id="hindigrade"></p>
+                    <p id="compgrade"></p>
+                    <div class="grade">
+                        <h2 id="grade"></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="percentage">
+                <div id="head3">
+                    <h1>Percentage</h1>
+                    <div id="pers">
+                        <p id="mathper"></p>
+                        <p id="sciper"></p>
+                        <p id="engper"></p>
+                        <p id="hinper"></p>
+                        <p id="compper"></p>
+                    </div>
+                    <div id="percen"><h2 id="per"></h2></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="ress">
+            <h2>Result: <span id="ress">Pass</span></h2>
+        </div>
+
+
+
+        <script src="index.js"></script>
+</body>
+
+</html>
